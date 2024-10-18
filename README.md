@@ -34,14 +34,18 @@ Overall, while there are some correlations between the features, the model's per
 - **Sepal length and sepal width** have less influence overall, though sepal length has a slight impact on differentiating Setosa and Versicolor.
 - **Setosa** is easiest to distinguish based on small petal measurements, while **Virginica** can be identified by larger petal measurements. **Versicolor** tends to have medium values for petal dimensions.
 These PDPs offer insights into how the RandomForestClassifier uses each feature to classify the flowers, helping us understand which features contribute most to the predictions.
+
 ---
+
 1. **Petal length and petal width** are the most important features for distinguishing between the three Iris species. Setosa has the smallest petals (both in length and width), Versicolor has medium-sized petals, and Virginica has the largest petals.
 2. **Sepal length** has a moderate impact on the classification, particularly for Setosa and Versicolor, but its effect is less consistent compared to petal features.
 3. **Sepal width** has the least impact across all three classes, with the ICE lines being mostly flat for all species.
 4. **Variability among instances**: The ICE plots show that the model's predictions can vary significantly for different instances of the same class, especially for features like sepal length and petal width. This variability is captured well by ICE plots and provides insights into how individual samples are affected by each feature.
 
 Overall: The ICE plots confirm that the model relies heavily on **petal features** (length and width) to distinguish between the species in the Iris dataset. The **sepal features** (length and width) play a secondary role, with minimal influence, particularly for Setosa and Virginica.
+
 ---
+
 - **Key Features**: The ALE plots for **petal length** and **petal width** show the strongest effects on the model's predictions, which aligns with what is known about the Iris dataset. Virginica has both the longest petals and the widest petals, so the model increases the probability of Virginica as these features increase.
 - **Less Important Features**: **Sepal length** and **sepal width** have much weaker effects on the predictions, as their ALE plots are relatively flat or show minimal changes. This indicates that these features are not as critical in distinguishing between the Iris species in the model.
 
